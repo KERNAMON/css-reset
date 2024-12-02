@@ -1,0 +1,95 @@
+/****** KERNAMON CSS RESET *******/
+
+/* Universal box-sizing for consistent sizing behavior */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding for common elements */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    color: inherit;
+    border-width: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+figure {
+    margin: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+cite {
+    font-style: normal;
+}
+
+fieldset {
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Added resets for responsive sizing of multimedia and form elements */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+/* Border consistency */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button, input, select, textarea {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure textarea inherits font */
+textarea {
+    font: inherit;
+}
+
+/* Styles for accessible navigation: Visible focus for interactive elements */
+:focus {
+    outline: 2px dashed #000; /* Adjust color for theme */
+    outline-offset: 2px;
+}
+/*EOF*/
