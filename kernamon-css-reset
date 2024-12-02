@@ -7,79 +7,94 @@
     box-sizing: border-box;
 }
 
-/* Remove default margin and padding for common elements */
+/* Reset default margin, padding, and ensure full-page layout */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family: sans-serif; /* Provide a default font-family */
+    line-height: 1.5;        /* Improve readability */
 }
 
+/* Reset links and ensure usability */
 a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
 
+/* Reset buttons to inherit styles */
 button {
     background-color: transparent;
     color: inherit;
-    border-width: 0;
+    border: 0;
     padding: 0;
     cursor: pointer;
 }
 
+/* Remove default figure margin */
 figure {
     margin: 0;
 }
 
+/* Remove inner padding and borders from input fields in Firefox */
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
     margin: 0;
 }
 
+/* Reset list styles */
 ul, ol, dd {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+/* Reset headings */
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-size: inherit;
     font-weight: inherit;
 }
 
+/* Reset paragraph margin */
 p {
     margin: 0;
 }
 
+/* Reset citation style */
 cite {
     font-style: normal;
 }
 
+/* Reset fieldset */
 fieldset {
-    border-width: 0;
+    border: 0;
     padding: 0;
     margin: 0;
 }
 
-/* Added resets for responsive sizing of multimedia and form elements */
-img, video {
+/* Responsive media elements */
+img, video, svg, canvas {
     max-width: 100%;
     height: auto;
+    display: block; /* Prevent inline gap */
 }
-/* Border consistency */
+
+/* Ensure border consistency in tables */
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
+/* Reset form elements */
 button, input, select, textarea {
     font: inherit;
     margin: 0;
     padding: 0;
+    border: 0; /* Reset borders for consistent look */
 }
 
 /* Ensure textarea inherits font */
@@ -87,9 +102,20 @@ textarea {
     font: inherit;
 }
 
-/* Styles for accessible navigation: Visible focus for interactive elements */
+/* Placeholder styling reset */
+::placeholder {
+    color: #888; /* Add light placeholder color */
+    opacity: 1;
+}
+
+/* Accessible navigation focus styles */
 :focus {
-    outline: 2px dashed #000; /* Adjust color for theme */
+    outline: 2px dashed #005fcc; /* Improved contrast */
     outline-offset: 2px;
+}
+
+/* Reset default hidden attribute behavior */
+[hidden] {
+    display: none;
 }
 /*EOF*/
